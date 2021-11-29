@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UNLCK demo</string>
+    <string name="error_fetching_message">An error occurred while fetching data! \nPlease retry later.</string>
+    <string name="content_desc_album_image">Album Image</string>
+    <string name="toolbar_title_list_album">Albums</string>
+    <string name="toolbar_title_detail_album">Detail album %1$s</string>
+    <string name="album_id_text">Album #%1$d</string>
+    <string name="album_id_short_text">#%1$d</string>
+    <string name="album_title_text">Title</string>
+</resources>

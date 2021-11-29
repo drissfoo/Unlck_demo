@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/listAlbumFragment">
+
+    <fragment
+        android:id="@+id/listAlbumFragment"
+        android:name="com.unlck.demo.ui.listalbum.ListAlbumFragment"
+        android:label="list_album_fragment"
+        tools:layout="@layout/list_album_fragment" >
+        <action
+            android:id="@+id/action_listAlbumFragment_to_detailAlbumFragment"
+            app:destination="@id/detailAlbumFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailAlbumFragment"
+        android:name="com.unlck.demo.ui.detailalbum.DetailAlbumFragment"
+        android:label="DetailAlbumFragment"
+        tools:layout="@layout/detail_album_fragment"/>
+</navigation>
